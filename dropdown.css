@@ -1,0 +1,68 @@
+.top {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/694/865/147/space-art-fantasy-art-sky-clouds-wallpaper-thumb.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.list {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list ul {
+    display: inline-flex;
+    list-style: none;
+    color: aqua;
+}
+
+.list ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.list ul li a {
+    text-decoration: none;
+}
+
+.first,
+.list ul li:hover {
+    background: orangered;
+    border-radius: 4px;
+}
+
+.sub-list {
+    display: block;
+}
+
+.list ul li:hover.sub-list {
+    display: block;
+    position: absolute;
+    background: chartreuse;
+    margin-top: 16px;
+    margin-left: -16px;
+}
+
+.list ul li:hover.sub-list ul {
+    display: block;
+    margin: 11px;
+}
+
+.list ul li:hover.sub-list ul li {
+    border-bottom: 1px initial white;
+    width: 140px;
+    padding: 9px;
+    border-radius: 0;
+    background: transparent;
+    text-align: left;
+}
+
+.list ul li:hover.sub-list ul li:last-child {
+    border-bottom: none;
+}
